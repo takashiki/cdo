@@ -1,12 +1,16 @@
-## Central do
-
-======
+# Central do
 
 A simple php router designed for super tiny projects.
 
 PATH_INFO Only.
 
-### Examples
+## Install
+
+```
+composer require takashiki/cdo
+```
+
+## Demo
 
 ```
 $do = new \Mis\Cdo();
