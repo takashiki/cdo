@@ -1,0 +1,22 @@
+{
+    "name": "takashiki/cdo",
+    "description": "A simple php router.",
+    "keywords": ["router"],
+    "homepage": "https://github.com/takashiki/cdo",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "takashiki",
+            "email": "857995137@qq.com",
+            "homepage": "http://blog.skyx.in/"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mis\\": "src/"
+        }
+    }
+}
