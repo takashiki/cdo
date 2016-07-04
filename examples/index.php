@@ -25,7 +25,31 @@ $do->any('/(?P<type>\w+)/(?P<page>\d+)', function ($page, $type) {
     echo $type.'<br>'.$page;
 });
 
+$do->get('/site/index', array((new SiteController()), 'actionIndex'));
+
+$do->get('/user/detail', array(User::class, 'detail'));
+
+$do->setNotFound(function () {
+    echo 'Page not found.';
+});
+
 $do->run();
+
+class SiteController
+{
+    public function actionIndex()
+    {
+        echo 'homepage';
+    }
+}
+
+class User
+{
+    public static function detail()
+    {
+        echo 'user detail';
+    }
+}
 
 /*
 // Using static call.
