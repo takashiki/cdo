@@ -124,7 +124,7 @@ class Cdo
         return call_user_func_array($handler, $this->getParameters($handler));
     }
 
-    public function setNotFound(callable $callback)
+    protected function _setNotFound(callable $callback)
     {
         $this->defaultCallback = $callback;
     }
